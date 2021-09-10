@@ -70,7 +70,7 @@ header{
     /* align-items: center; */
 }
 nav{
-    width:40%;
+    width:50%;
     display:flex;
     justify-content:space-evenly;
     margin-top:5%;
@@ -138,8 +138,11 @@ button:hover{
     width:100%;
 }
 
-/* 500PX BREAK POINT STYLES */
-@media (max-width: 500px) {
+/* 800PX BREAK POINT STYLES */
+@media (max-width: 800px) {
+    nav{
+        width: 60%;
+    }
     .artists-container{
         flex-direction: column;
         justify-content: center;
@@ -147,21 +150,25 @@ button:hover{
     }
     .artist{
         width: 90%;
-
     }
+}
+
+
+/* 500PX BREAK POINT STYLES */
+@media (max-width: 500px) {
+    
     .title-container div {
         width: 100%;
         height: 40vh;
     }
     nav {
-        width: 55%;
+        width: 70%;
     }
     nav a {
         font-size: 2rem;
     }
     .title-container hr{
         width:100%;
-        /* border: 1px solid pink; */
     }
     h1{
         font-size:5rem;
